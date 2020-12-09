@@ -1,0 +1,40 @@
+// responsive web design
+@mixin response-degin($breakpoint) {
+	@if (type-of($breakpoint) == string and map-has-key($grid-breakpoints, $breakpoint)) {
+		$point: map-get($grid-breakpoints, $breakpoint);
+		@media (min-width: $point) {
+			@content;
+		}
+	} @else if not $breakpoint {
+		@content;
+	} @else {
+		@warn 'no search breakpoint';
+	}
+}
+
+@mixin generatorFontZise($infix: null) {
+	@each $size in map-keys($font-sizes) {
+		.text#{$infix}-#{$size} {
+			font-size: map-get($font-sizes, $size) !important;
+		}
+	}
+}
+
+@each $key, $val in $grid-breakpoints {
+	$infix: breakpoint-infix($key, $grid-breakpoints);
+	@include response-degin($key) {
+		@include generatorFontZise($infix);
+	}
+}
+
+.font-weight-semibold {
+	font-weight: 600;
+}
+
+.pt-7 {
+	padding-top: 56px;
+}
+
+.pb-7 {
+	padding-bottom: 56px;
+}

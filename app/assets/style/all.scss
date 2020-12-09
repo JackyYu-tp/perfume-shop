@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'utils/function';
+//import bootstrap
+@import 'bootstrap/bootstrap';
+
+@import 'utils/mixin';
+@import 'utils/base';
+@import 'utils/utils';
+
+//pages
+@import 'pages/index';
+@import 'pages/product';
