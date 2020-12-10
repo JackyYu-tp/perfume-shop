@@ -1,7 +1,13 @@
-//字型
-
 img {
 	max-width: 100%;
 	height: auto;
 	object-fit: cover;
+}
+
+a {
+	color: $black;
+	&:hover {
+		text-decoration: none;
+		color: $brown;
+	}
 }
