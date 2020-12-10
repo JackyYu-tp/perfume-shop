@@ -9149,6 +9149,12 @@ img {
   -o-object-fit: cover;
      object-fit: cover; }
 
+a {
+  color: #000; }
+  a:hover {
+    text-decoration: none;
+    color: #916000; }
+
 @media (min-width: 0) {
   .text-sm {
     font-size: 0.75rem !important; }
@@ -9266,6 +9272,12 @@ img {
   @media (max-width: 767px) {
     .pb-7 {
       padding-bottom: 40px; } }
+
+.mb-10 {
+  margin-bottom: 80px; }
+  @media (max-width: 767px) {
+    .mb-10 {
+      margin-bottom: 40px; } }
 
 .cartCount {
   left: 50%; }
