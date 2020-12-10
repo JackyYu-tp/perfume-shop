@@ -1,4 +1,12 @@
 .product-img {
 	height: 255px;
 	object-position: center;
+	@include mobile {
+		height: 165px;
+	}
+}
+
+.pagItem:hover {
+	color: $gold;
+	cursor: pointer;
 }

@@ -37,8 +37,14 @@
 
 .pt-10 {
 	padding-top: 80px;
+	@include mobile {
+		padding-top: 42px;
+	}
 }
 
 .pb-7 {
 	padding-bottom: 56px;
+	@include mobile {
+		padding-bottom: 40px;
+	}
 }
