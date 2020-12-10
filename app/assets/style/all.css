@@ -34,6 +34,7 @@
   --black: #000;
   --gray: #e0e0e0;
   --dark-gray: #8d8d8d;
+  --gold: #ac8a46;
   --brown: #916000;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -2189,6 +2190,28 @@ pre code {
   background-color: #d2d2d2;
 }
 
+.table-gold,
+.table-gold > th,
+.table-gold > td {
+  background-color: #e8decb;
+}
+
+.table-gold th,
+.table-gold td,
+.table-gold thead th,
+.table-gold tbody + tbody {
+  border-color: #d4c29f;
+}
+
+.table-hover .table-gold:hover {
+  background-color: #e0d3b9;
+}
+
+.table-hover .table-gold:hover > td,
+.table-hover .table-gold:hover > th {
+  background-color: #e0d3b9;
+}
+
 .table-brown,
 .table-brown > th,
 .table-brown > td {
@@ -3401,6 +3424,45 @@ fieldset:disabled a.btn {
           box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.5);
 }
 
+.btn-gold {
+  color: #fff;
+  background-color: #ac8a46;
+  border-color: #ac8a46;
+}
+
+.btn-gold:hover {
+  color: #fff;
+  background-color: #91743b;
+  border-color: #886d37;
+}
+
+.btn-gold:focus, .btn-gold.focus {
+  color: #fff;
+  background-color: #91743b;
+  border-color: #886d37;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(184, 156, 98, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(184, 156, 98, 0.5);
+}
+
+.btn-gold.disabled, .btn-gold:disabled {
+  color: #fff;
+  background-color: #ac8a46;
+  border-color: #ac8a46;
+}
+
+.btn-gold:not(:disabled):not(.disabled):active, .btn-gold:not(:disabled):not(.disabled).active,
+.show > .btn-gold.dropdown-toggle {
+  color: #fff;
+  background-color: #886d37;
+  border-color: #7f6634;
+}
+
+.btn-gold:not(:disabled):not(.disabled):active:focus, .btn-gold:not(:disabled):not(.disabled).active:focus,
+.show > .btn-gold.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(184, 156, 98, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(184, 156, 98, 0.5);
+}
+
 .btn-brown {
   color: #fff;
   background-color: #916000;
@@ -3880,6 +3942,40 @@ fieldset:disabled a.btn {
 .show > .btn-outline-dark-gray.dropdown-toggle:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(141, 141, 141, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(141, 141, 141, 0.5);
+}
+
+.btn-outline-gold {
+  color: #ac8a46;
+  border-color: #ac8a46;
+}
+
+.btn-outline-gold:hover {
+  color: #fff;
+  background-color: #ac8a46;
+  border-color: #ac8a46;
+}
+
+.btn-outline-gold:focus, .btn-outline-gold.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(172, 138, 70, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(172, 138, 70, 0.5);
+}
+
+.btn-outline-gold.disabled, .btn-outline-gold:disabled {
+  color: #ac8a46;
+  background-color: transparent;
+}
+
+.btn-outline-gold:not(:disabled):not(.disabled):active, .btn-outline-gold:not(:disabled):not(.disabled).active,
+.show > .btn-outline-gold.dropdown-toggle {
+  color: #fff;
+  background-color: #ac8a46;
+  border-color: #ac8a46;
+}
+
+.btn-outline-gold:not(:disabled):not(.disabled):active:focus, .btn-outline-gold:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-gold.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(172, 138, 70, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(172, 138, 70, 0.5);
 }
 
 .btn-outline-brown {
@@ -6259,6 +6355,22 @@ a.badge-dark-gray:focus, a.badge-dark-gray.focus {
           box-shadow: 0 0 0 0.2rem rgba(141, 141, 141, 0.5);
 }
 
+.badge-gold {
+  color: #fff;
+  background-color: #ac8a46;
+}
+
+a.badge-gold:hover, a.badge-gold:focus {
+  color: #fff;
+  background-color: #886d37;
+}
+
+a.badge-gold:focus, a.badge-gold.focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(172, 138, 70, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(172, 138, 70, 0.5);
+}
+
 .badge-brown {
   color: #fff;
   background-color: #916000;
@@ -6503,6 +6615,20 @@ a.badge-brown:focus, a.badge-brown.focus {
 
 .alert-dark-gray .alert-link {
   color: #303030;
+}
+
+.alert-gold {
+  color: #594824;
+  background-color: #eee8da;
+  border-color: #e8decb;
+}
+
+.alert-gold hr {
+  border-top-color: #e0d3b9;
+}
+
+.alert-gold .alert-link {
+  color: #352b15;
 }
 
 .alert-brown {
@@ -7040,6 +7166,22 @@ a.badge-brown:focus, a.badge-brown.focus {
   color: #fff;
   background-color: #494949;
   border-color: #494949;
+}
+
+.list-group-item-gold {
+  color: #594824;
+  background-color: #e8decb;
+}
+
+.list-group-item-gold.list-group-item-action:hover, .list-group-item-gold.list-group-item-action:focus {
+  color: #594824;
+  background-color: #e0d3b9;
+}
+
+.list-group-item-gold.list-group-item-action.active {
+  color: #fff;
+  background-color: #594824;
+  border-color: #594824;
 }
 
 .list-group-item-brown {
@@ -8106,6 +8248,16 @@ button.bg-dark-gray:focus {
   background-color: #747474 !important;
 }
 
+.bg-gold {
+  background-color: #ac8a46 !important;
+}
+
+a.bg-gold:hover, a.bg-gold:focus,
+button.bg-gold:hover,
+button.bg-gold:focus {
+  background-color: #886d37 !important;
+}
+
 .bg-brown {
   background-color: #916000 !important;
 }
@@ -8214,6 +8366,10 @@ button.bg-brown:focus {
 
 .border-dark-gray {
   border-color: #8d8d8d !important;
+}
+
+.border-gold {
+  border-color: #ac8a46 !important;
 }
 
 .border-brown {
@@ -11658,6 +11814,14 @@ a.text-dark-gray:hover, a.text-dark-gray:focus {
   color: #676767 !important;
 }
 
+.text-gold {
+  color: #ac8a46 !important;
+}
+
+a.text-gold:hover, a.text-gold:focus {
+  color: #765e30 !important;
+}
+
 .text-brown {
   color: #916000 !important;
 }
@@ -11956,10 +12120,30 @@ img {
   padding-top: 56px;
 }
 
+.pt-10 {
+  padding-top: 80px;
+}
+
+@media (max-width: 767px) {
+  .pt-10 {
+    padding-top: 42px;
+  }
+}
+
 .pb-7 {
   padding-bottom: 56px;
 }
 
+@media (max-width: 767px) {
+  .pb-7 {
+    padding-bottom: 40px;
+  }
+}
+
+.cartCount {
+  left: 50%;
+}
+
 .banner {
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg");
   background-size: cover;
@@ -12043,86 +12227,20 @@ img {
   padding-bottom: 112px;
 }
 
-.banner {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 870px;
+.product-img {
+  height: 255px;
+  -o-object-position: center;
+     object-position: center;
 }
 
 @media (max-width: 767px) {
-  .banner {
-    height: 480px;
+  .product-img {
+    height: 165px;
   }
 }
 
-.banner-button-shop {
-  width: 80%;
-  border: 2px solid #fff;
-}
-
-@media (max-width: 767px) {
-  .banner-button-shop {
-    width: 100%;
-  }
-}
-
-.banner-button-shop:hover, .banner-button-shop:focus, .banner-button-shop:active {
-  color: #fff !important;
-  background-color: rgba(255, 255, 255, 0.3) !important;
-}
-
-.product-image {
-  width: 100%;
-  height: 555px;
-}
-
-@media (max-width: 767px) {
-  .product-image {
-    height: 350px;
-  }
-}
-
-.product-image.lg {
-  height: 1080px;
-}
-
-@media (max-width: 767px) {
-  .product-image.lg {
-    height: 680px;
-  }
-}
-
-.product-text {
-  width: 350px;
-}
-
-.saleProduct {
-  height: 540px;
-}
-
-@media (max-width: 767px) {
-  .saleProduct {
-    width: 100%;
-    height: 350px;
-    -o-object-position: bottom;
-       object-position: bottom;
-  }
-}
-
-@media (max-width: 767px) {
-  .recycling-img {
-    height: 520px;
-    width: 100%;
-  }
-}
-
-.booking {
-  height: 600px;
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index10.jpg");
-  background-size: cover;
-  background-position: center;
-  padding-top: 312px;
-  padding-bottom: 112px;
+.pagItem:hover {
+  color: #ac8a46;
+  cursor: pointer;
 }
 /*# sourceMappingURL=all.css.map */

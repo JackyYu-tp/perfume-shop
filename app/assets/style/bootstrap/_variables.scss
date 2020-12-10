@@ -46,6 +46,7 @@ $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 $gold: #ac8a46 !default;
+$brown: #916000 !default;
 
 $colors: () !default;
 $colors: map-merge(
@@ -65,7 +66,7 @@ $colors: map-merge(
 		'gray-dark': $gray-800,
 		'gold': $gold,
 		'black': #000,
-		'brown': #916000,
+		'brown': $brown,
 	),
 	$colors
 );
@@ -97,7 +98,7 @@ $theme-colors: map-merge(
 		'gray': $gray-350,
 		'dark-gray': $gray-550,
 		'gold': $gold,
-		'brown': #916000,
+		'brown': $brown,
 	),
 	$theme-colors
 );
