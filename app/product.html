@@ -7,19 +7,19 @@ current: product
 
 <div class="bg-brown d-none d-sm-block">
 	<div class="container py-3">
-		<ul class="list-unstyled d-flex text-white text-md-lg mb-0">
-			<li class="mr-3">CHANEL</li>
-			<li class="mr-3">Jo Malone</li>
-			<li class="mr-3">Curology</li>
-			<li class="mr-3">Dior</li>
-			<li class="mr-3">Chloe</li>
-			<li>ZARA</li>
+		<ul class="list-unstyled d-flex text-white text-md-lg mb-0 product-type-list">
+			<li class="mr-3"><a href="#">CHANEL</a></li>
+			<li class="mr-3"><a href="#">Jo Malone</a></li>
+			<li class="mr-3"><a href="#">Curology</a></li>
+			<li class="mr-3"><a href="#">Dior</a></li>
+			<li class="mr-3"><a href="#">Chloe</a></li>
+			<li><a href="#">ZARA</a></li>
 		</ul>
 	</div>
 </div>
 <div>
 	<div class="container pt-10 pb-7">
-		<ul class="row mb-0 mb-md-7 list-unstyled">
+		<ul class="list-unstyled row mb-0 mb-md-7">
 			<li class="col-6 col-md-3 mb-2 mb-md-0 card border-0">
 				<img
 					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products1.jpg"
@@ -106,8 +106,6 @@ current: product
 					</a>
 				</div>
 			</li>
-		</ul>
-		<ul class="row mb-0 mb-md-7 list-unstyled">
 			<li class="col-6 col-md-3 mb-2 mb-md-0 card border-0">
 				<img
 					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products5.jpg"
@@ -194,8 +192,6 @@ current: product
 					</a>
 				</div>
 			</li>
-		</ul>
-		<ul class="row mb-0 mb-md-7 list-unstyled">
 			<li class="col-6 col-md-3 mb-2 mb-md-0 card border-0">
 				<img
 					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index3.png"
@@ -283,14 +279,26 @@ current: product
 				</div>
 			</li>
 		</ul>
-		<ul class="list-unstyled d-flex justify-content-center text-md-lg pt-10">
-			<li class="mr-4 text-gold pagItem"><u>1</u></li>
-			<li class="mr-4 pagItem">2</li>
-			<li class="pagItem">3</li>
+		<ul class="pagination d-flex justify-content-center text-md-lg pt-10">
+			<li class="page-item disabled">
+				<a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+			</li>
+			<li class="page-item active">
+				<a class="page-link" href="#">1</a>
+			</li>
+			<li class="page-item" aria-current="page">
+				<a class="page-link" href="#">2</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">3</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">Next</a>
+			</li>
 		</ul>
 	</div>
 </div>
-<div class="booking">
+<div class="booking d-flex align-items-end">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">

@@ -7,12 +7,13 @@
 		<title><%- title %></title>
 		<link rel="stylesheet" href="./assets/style/all.css" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 
 	<body>
-		<div class="container">
-			<nav class="navbar navbar-expand-md navbar-light px-0">
-				<a class="navbar-brand" href="https://jackyyu-tw.github.io/layout-week6/">
+		<nav class="navbar navbar-expand-md navbar-light px-0 pb-0">
+			<div class="container-md">
+				<a class="navbar-brand ml-3 ml-md-0" href="https://jackyyu-tw.github.io/layout-week6/">
 					<img
 						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume.png"
 					/>
@@ -22,7 +23,7 @@
 					<span class="badge badge-pill badge-brown position-absolute cartCount">3</span>
 				</a>
 				<button
-					class="navbar-toggler"
+					class="navbar-toggler mr-3 mr-md-0"
 					type="button"
 					data-toggle="collapse"
 					data-target="#navbarSupportedContent"
@@ -77,12 +78,12 @@
 						</li>
 					</ul>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 		<%- contents %>
-		<div class="bg-brown">
+		<footer class="bg-brown">
 			<div class="container pt-3 pb-3 d-flex justify-content-between">
-				<div class="d-flex justify-content-between w-100 d-md-inline">
+				<div class="d-flex justify-content-between align-items-center w-100 d-md-inline">
 					<a class="mr-3" href="#">
 						<img
 							src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfumewhite.png"
@@ -102,7 +103,7 @@
 					</li>
 				</ul>
 			</div>
-		</div>
+		</footer>
 
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -120,6 +121,29 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="./assets/js/vendors.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script src="./assets/js/all.js"></script>
+		<script>
+			AOS.init({
+				// Global settings:
+				disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+				startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+				initClassName: 'aos-init', // class applied after initialization
+				animatedClassName: 'aos-animate', // class applied on animation
+				useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+				disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+				debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+				throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+				// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+				offset: 80, // offset (in px) from the original trigger point
+				delay: 0, // values from 0 to 3000, with step 50ms
+				duration: 400, // values from 0 to 3000, with step 50ms
+				easing: 'ease', // default easing for AOS animations
+				once: true, // whether animation should happen only once - while scrolling down
+				mirror: false, // whether elements should animate out while scrolling past them
+				anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+			})
+		</script>
 	</body>
 </html>
