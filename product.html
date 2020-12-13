@@ -7,12 +7,13 @@
 		<title>商品</title>
 		<link rel="stylesheet" href="./assets/style/all.css" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 
 	<body>
-		<div class="container">
-			<nav class="navbar navbar-expand-md navbar-light px-0">
-				<a class="navbar-brand" href="https://jackyyu-tw.github.io/layout-week6/">
+		<nav class="navbar navbar-expand-md navbar-light px-0 pb-0">
+			<div class="container-md">
+				<a class="navbar-brand ml-3 ml-md-0" href="https://jackyyu-tw.github.io/layout-week6/">
 					<img
 						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume.png"
 					/>
@@ -22,7 +23,7 @@
 					<span class="badge badge-pill badge-brown position-absolute cartCount">3</span>
 				</a>
 				<button
-					class="navbar-toggler"
+					class="navbar-toggler mr-3 mr-md-0"
 					type="button"
 					data-toggle="collapse"
 					data-target="#navbarSupportedContent"
@@ -77,24 +78,24 @@
 						</li>
 					</ul>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 		
 <div class="bg-brown d-none d-sm-block">
 	<div class="container py-3">
-		<ul class="list-unstyled d-flex text-white text-md-lg mb-0">
-			<li class="mr-3">CHANEL</li>
-			<li class="mr-3">Jo Malone</li>
-			<li class="mr-3">Curology</li>
-			<li class="mr-3">Dior</li>
-			<li class="mr-3">Chloe</li>
-			<li>ZARA</li>
+		<ul class="list-unstyled d-flex text-white text-md-lg mb-0 product-type-list">
+			<li class="mr-3"><a href="#">CHANEL</a></li>
+			<li class="mr-3"><a href="#">Jo Malone</a></li>
+			<li class="mr-3"><a href="#">Curology</a></li>
+			<li class="mr-3"><a href="#">Dior</a></li>
+			<li class="mr-3"><a href="#">Chloe</a></li>
+			<li><a href="#">ZARA</a></li>
 		</ul>
 	</div>
 </div>
 <div>
 	<div class="container pt-10 pb-7">
-		<ul class="row mb-0 mb-md-7 list-unstyled">
+		<ul class="list-unstyled row mb-0 mb-md-7">
 			<li class="col-6 col-md-3 mb-2 mb-md-0 card border-0">
 				<img
 					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products1.jpg"
@@ -181,8 +182,6 @@
 					</a>
 				</div>
 			</li>
-		</ul>
-		<ul class="row mb-0 mb-md-7 list-unstyled">
 			<li class="col-6 col-md-3 mb-2 mb-md-0 card border-0">
 				<img
 					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products5.jpg"
@@ -269,8 +268,6 @@
 					</a>
 				</div>
 			</li>
-		</ul>
-		<ul class="row mb-0 mb-md-7 list-unstyled">
 			<li class="col-6 col-md-3 mb-2 mb-md-0 card border-0">
 				<img
 					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index3.png"
@@ -358,14 +355,26 @@
 				</div>
 			</li>
 		</ul>
-		<ul class="list-unstyled d-flex justify-content-center text-md-lg pt-10">
-			<li class="mr-4 text-gold pagItem"><u>1</u></li>
-			<li class="mr-4 pagItem">2</li>
-			<li class="pagItem">3</li>
+		<ul class="pagination d-flex justify-content-center text-md-lg pt-10">
+			<li class="page-item disabled">
+				<a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+			</li>
+			<li class="page-item active">
+				<a class="page-link" href="#">1</a>
+			</li>
+			<li class="page-item" aria-current="page">
+				<a class="page-link" href="#">2</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">3</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">Next</a>
+			</li>
 		</ul>
 	</div>
 </div>
-<div class="booking">
+<div class="booking d-flex align-items-end">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
@@ -415,9 +424,9 @@
 	</div>
 </div>
 
-		<div class="bg-brown">
+		<footer class="bg-brown">
 			<div class="container pt-3 pb-3 d-flex justify-content-between">
-				<div class="d-flex justify-content-between w-100 d-md-inline">
+				<div class="d-flex justify-content-between align-items-center w-100 d-md-inline">
 					<a class="mr-3" href="#">
 						<img
 							src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfumewhite.png"
@@ -437,7 +446,7 @@
 					</li>
 				</ul>
 			</div>
-		</div>
+		</footer>
 
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -455,6 +464,29 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="./assets/js/vendors.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script src="./assets/js/all.js"></script>
+		<script>
+			AOS.init({
+				// Global settings:
+				disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+				startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+				initClassName: 'aos-init', // class applied after initialization
+				animatedClassName: 'aos-animate', // class applied on animation
+				useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+				disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+				debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+				throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+				// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+				offset: 80, // offset (in px) from the original trigger point
+				delay: 0, // values from 0 to 3000, with step 50ms
+				duration: 400, // values from 0 to 3000, with step 50ms
+				easing: 'ease', // default easing for AOS animations
+				once: true, // whether animation should happen only once - while scrolling down
+				mirror: false, // whether elements should animate out while scrolling past them
+				anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+			})
+		</script>
 	</body>
 </html>
